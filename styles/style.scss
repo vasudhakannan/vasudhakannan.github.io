@@ -1,0 +1,45 @@
+@font-face{
+      font-family: "Open Sans Light";
+      src: url("../fonts/Open Sans/OpenSans-Light.ttf");
+}
+@font-face{
+      font-family: "Open Sans";
+      src: url("../fonts/Open Sans/OpenSans-Regular.ttf");
+}
+@font-face{
+      font-family: "League Gothic";
+      src: url("../fonts/League Gothic/LeagueGothic-Regular.otf");
+}
+
+$font-opensans: "Open Sans";
+$font-opensanslight: "Open Sans Light";
+$font-leaguegothic: "League Gothic";
+
+$background-image: url("../images/background_image.jpg");
+
+$color-grey-light: rgb(200, 200, 200);
+
+//Type your style inside the body block
+
+body{
+      .landing-page-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            background-image: $background-image;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: $color-grey-light;
+            .landing-page-title{
+                  font-family: $font-leaguegothic;
+                  font-size: 150px;
+            }
+            .landing-page-subtitle{
+                  font-family: $font-opensanslight;
+                  font-size: 40px;
+            }
+      }
+}
